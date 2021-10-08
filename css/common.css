@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, ul, li, form, fieldset { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: #000; transition: all 0.5s ease;}
+.hidden {position: absolute; text-indent: -9999px;}
+body {background: rgb(199, 199, 199);}
+legend {display: none;}
+.upper {text-transform: uppercase;}
+/* 헤더 */
+#header {width: 98%; min-width: 1180px; height: 80px; position: fixed; display: flex; background: #fff; margin: 20px 0 0 1%; border-radius: 10px;}
+#header h1 {
+    width: 154px; height: 31px; float: left; text-indent: -9999px;background: url(../images/bg_common.png) no-repeat 0 0;
+    margin: 24.5px 50px 0 50px;
+}
+
+/* gnb */
+#gnb {flex: 2; display: flex; align-items: center; justify-content: center} 
+#gnb a {display: block;}
+#gnb li:hover > a {color: #ffb718;}
+#gnb > ul > li {float: left; margin: 0 15px;}
+#gnb > ul > li > a {font-size: 15px; font-weight: 600; font-size: 15px;}
+div.gnb_depth_area {position: absolute; top: 0; left: 0; width: 100%; margin-top: 80px; background: #fff; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; display: none;}
+div.gnb_depth_area > ul.depth2 {max-width: 1330px; margin: 0 auto; }
+div.gnb_depth_area > ul.depth2 > li {float: left; width: 25%; min-height: 250px; border-right: 1px solid #e1e1e1; margin-top: 30px;  padding: 0 20px; box-sizing: border-box;}
+div.gnb_depth_area > ul.depth2 > li:last-child {border: 0;}
+div.gnb_depth_area > ul.depth2 > li > a {background: url(../images/gnb_libg.png) no-repeat right center; color: #343434; font-size: 20px;}
+div.gnb_depth_area > ul.depth2 > li:hover > a {background-image: url(../images/gnb_libg_on.png);}
+ul.depth3 {margin-top: 10px;}
+ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
+
+/* gnb_member */
+#gnb_member {flex: 1; display: flex; align-items: center; }
+#gnb_member > div {width: 545px;}
+#gnb_member form {border-bottom: 1px solid #000; height: 50px;  position: relative; float: left; margin: 0 20px;}
+#gnb_member fieldset {width: 100px; border: 0 none;}
+#btnSerch {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+#serch_form {width: 200px; border: 0 none;  height: 48px;}
+#gnb_member ul li {float: left; margin: 0 5px;}
+#gnb_member ul li a:not(.login) {}
+#gnb_member a {display: block;}
+.login {
+    width: 137px; height: 49px; border: 1px solid #ffb718;
+    border-radius: 50px; color: #ffb718; font-size: 15px; font-weight: 600;
+    line-height: 49px; background: url(../images/more02.png) no-repeat 90% center;
+}
+.login span {padding-left: 20px;}
+.rai {position: relative; width: 50px; height: 50px; background: #ffb718; border-radius: 50%; text-align: center; line-height: 50px;}
+.rai img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.rai span {font-size: 12px;}
+.sb_btn {}

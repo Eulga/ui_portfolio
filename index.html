@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <h1>emart</h1>
+        <nav id="gnb">
+            <h2 class="hidden">주요메뉴</h2>
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                    <div class="gnb_depth_area">
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">세부메뉴1</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세부메뉴2</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                    <li><a href="#">세부세부메뉴3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">세부메뉴3</a></li>
+                            <li><a href="#">세부메뉴4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                    <div class="gnb_depth_area">
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">세부메뉴1</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세부메뉴2</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                    <li><a href="#">세부세부메뉴3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">세부메뉴3</a></li>
+                            <li><a href="#">세부메뉴4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Event</a>
+                    <div class="gnb_depth_area">
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">세부메뉴1</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세부메뉴2</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                    <li><a href="#">세부세부메뉴3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">세부메뉴3</a></li>
+                            <li><a href="#">세부메뉴4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Review</a>
+                    <div class="gnb_depth_area">
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">세부메뉴1</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세부메뉴2</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                    <li><a href="#">세부세부메뉴3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">세부메뉴3</a></li>
+                            <li><a href="#">세부메뉴4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">E Center</a>
+                    <div class="gnb_depth_area">
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">세부메뉴1</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세부메뉴2</a>
+                                <ul class="depth3">
+                                    <li><a href="#">세부세부메뉴1</a></li>
+                                    <li><a href="#">세부세부메뉴2</a></li>
+                                    <li><a href="#">세부세부메뉴3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">세부메뉴3</a></li>
+                            <li><a href="#">세부메뉴4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+            </ul>
+        </nav>
+        <nav id="gnb_member">
+            <div>
+                <h2 class="hidden">로그인메뉴</h2>
+                <form>
+                    <fieldset>
+                        <legend>검색</legend>
+                        <input type="serch" id="serch_form" title="Serch" placeholder="Search" autocomplete="off">
+                        <input type="image" src="images/search-i.png" id="btnSerch" title="검색" value="검색" alt="검색">
+                    </fieldset>
+                </form>
+                <ul>
+                    <li><a href="#" class="login">
+                        <span class="upper">login</span></a></li>
+                    <li><a href="#" class="rai sb_btn"><span>장바구니</span>
+                        <img src="images/cart-i.png" alt="장바구니이미지">
+                    </a></li>
+                    <li><a href="#" class="rai myp_btn"><span>마이<br>페이지</span>
+                        <img src="images/mypage-i.png" alt="장바구니이미지">
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="sliderWrap">
+        <div id="slider_display">
+            <ul id="slider">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul id="slider_num">
+                <li><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li><a href="#">04</a></li>
+            </ul>
+            <a href="#" id="prev_btn">prev</a>
+            <a href="#" id="next_btn">next</a>
+        </div>
+    </div>
+    <section id="real_time_popular_product">
+        <!-- p태그 앱솔루트 -->
+        <h2>실시간 인기상품</h2>
+        <p>오늘 10시 기준</p>
+        <ul>
+            <li><a href="#"><span>1</span>내용</a></li>
+            <li><a href="#"><span>2</span>내용</a></li>
+            <li><a href="#"><span>3</span>내용</a></li>
+        </ul>
+    </section>
+    <main>
+        <section>
+            <h2>BEST PRODUCT</h2>
+            <p>내용(한줄)</p>
+            <div id="sec1_menu">
+                <!-- after를 이용해서 화살표 이미지 돌리기 -->
+                <p>메뉴제목</p>
+                <ul>
+                    <li>전체제품</li>
+                    <li>기획/선물세트</li>
+                    <li>브랜드별</li>
+                    <li>기능별</li>
+                </ul>
+            </div>
+            <div id="sec1_menu_kind">
+                <a href="#">All</a>
+                <ul>
+                    <li><a href="#">소제목1</a></li>
+                    <li><a href="#">소제목2</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">소제목1</a></li>
+                    <li><a href="#">소제목2</a></li>
+                    <li><a href="#">소제목3</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+            <a href="#" id="sec1_more_view">more view</a>
+        </section>
+        <section>
+            <h2>new product</h2>
+            <p>새롭게 준비했어요!</p>
+            <div>
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+                <div class="item_count">
+                    <div class="item_photo_box">
+                        <a href="#">n번상품</a>
+                    </div>
+                    <div class="item_info">
+                        <p>브랜드이름</p>
+                        <a href="#">n번 상품 제목</a>
+                        <div class="blind">
+                            <p>상품한줄홍보문구</p>
+                            <p>무료배송(18시까지 주문시 오늘출발)</p>
+                            <p><span class="sec2_price">가격</span><span class="sec2_a_cost_price">원가</span><span class="discount">할인율</span></p>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                            
+                        </div>
+                        <ul>
+                            <li>장바구니</li>
+                            <li>결제하기</li>
+                            <li>선물하기</li>
+                        </ul>
+                        <p>shop now</p>
+                    </div>
+                </div>
+                <a href="#">prev</a>
+                <a href="#">next</a>
+            </div>
+        </section>
+        <section>
+            <h2>recommended product</h2>
+            <p>내용(한줄)</p>
+            <ul>
+                <li><p>내용</p></li>
+                <li><p>내용</p></li>
+                <li><p>내용</p></li>
+                <li><p>내용</p></li>
+            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <div><a href="#">제품이미지</a></div>
+                        <div>
+                            <div class="item_title_box">
+                                <p>브랜드명</p>
+                                <p>제품명</p>
+                            </div>
+                            <div class="item_price_box">
+                                <p><span class="sec2_price">가격</span><span class="sec2_a_cost_price">원가</span><span class="discount">할인율</span></p>
+                            </div>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="#">제품이미지</a></div>
+                        <div>
+                            <div class="item_title_box">
+                                <p>브랜드명</p>
+                                <p>제품명</p>
+                            </div>
+                            <div class="item_price_box">
+                                <p><span class="sec2_price">가격</span><span class="sec2_a_cost_price">원가</span><span class="discount">할인율</span></p>
+                            </div>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="#">제품이미지</a></div>
+                        <div>
+                            <div class="item_title_box">
+                                <p>브랜드명</p>
+                                <p>제품명</p>
+                            </div>
+                            <div class="item_price_box">
+                                <p><span class="sec2_price">가격</span><span class="sec2_a_cost_price">원가</span><span class="discount">할인율</span></p>
+                            </div>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="#">제품이미지</a></div>
+                        <div>
+                            <div class="item_title_box">
+                                <p>브랜드명</p>
+                                <p>제품명</p>
+                            </div>
+                            <div class="item_price_box">
+                                <p><span class="sec2_price">가격</span><span class="sec2_a_cost_price">원가</span><span class="discount">할인율</span></p>
+                            </div>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div>
+            <div>
+                <p><span>emart</span>가 챙겨줄게요</p>
+                <p>원하는 날 받아 볼 수 있는 정기배송</p>
+                <a href="#">more view</a>
+            </div>
+            <div>
+                <p>간편하게 선물해보세요!</p>
+                <p>특별한 사람에게 특별한 선물하기</p>
+                <a href="#">more view</a>
+            </div>
+        </div>
+        <section>
+            <header>
+                <h2>customer review</h2>
+                <p>솔직한 후기를 확인하세요!</p>
+                <a href="#"><span>more view</span></a>
+            </header>
+            <div class="rev_box">
+                <div>리뷰이미지</div>
+                <div>
+                    <p>리뷰제목</p>
+                    <p>리뷰내용</p>
+                    <div>
+                        <a href="#">제품이미지</a>
+                        <a href="#">
+                            <p>브랜드명</p>
+                            <p>제품명</p>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                            <p>가격</p>
+                        </a>
+                    </div>
+                </div>
+                <div>순서숫자</div>
+            </div>
+            <div class="rev_box">
+                <div>리뷰이미지</div>
+                <div>
+                    <p>리뷰제목</p>
+                    <p>리뷰내용</p>
+                    <div>
+                        <a href="#">제품이미지</a>
+                        <a href="#">
+                            <p>브랜드명</p>
+                            <p>제품명</p>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                            <p>가격</p>
+                        </a>
+                    </div>
+                </div>
+                <div>순서숫자</div>
+            </div>
+            <div class="rev_box">
+                <div>리뷰이미지</div>
+                <div>
+                    <p>리뷰제목</p>
+                    <p>리뷰내용</p>
+                    <div>
+                        <a href="#">제품이미지</a>
+                        <a href="#">
+                            <p>브랜드명</p>
+                            <p>제품명</p>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                            <p>가격</p>
+                        </a>
+                    </div>
+                </div>
+                <div>순서숫자</div>
+            </div>
+            <div class="rev_box">
+                <div>리뷰이미지</div>
+                <div>
+                    <p>리뷰제목</p>
+                    <p>리뷰내용</p>
+                    <div>
+                        <a href="#">제품이미지</a>
+                        <a href="#">
+                            <p>브랜드명</p>
+                            <p>제품명</p>
+                            <ul>
+                                <li>별점</li>
+                                <li>리뷰수</li>
+                            </ul>
+                            <p>가격</p>
+                        </a>
+                    </div>
+                </div>
+                <div>순서숫자</div>
+            </div>
+        </section>
+        <section>
+            <h2>홍보영상</h2>
+            <div id="videoWrap">
+                <div>
+                    <div>
+
+                    </div>
+                    <!-- <video src=""></video> -->
+                </div>
+                <div>
+                    <p>live tv</p>
+                    <p>내용</p>
+                    <p>태그내용</p>
+                    <div>
+                        <div>제품이미지</div>
+                        <p>브랜드이름</p>
+                        <p>제품이름</p>
+                        <p><span class="sec2_price">가격</span><span class="sec2_a_cost_price">원가</span><span class="discount">할인율</span></p>
+                        <ul>
+                            <li>별점</li>
+                            <li>리뷰수</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">비디오메뉴1</a></li>
+                    <li><a href="#">비디오메뉴2</a></li>
+                    <li><a href="#">비디오메뉴3</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">결제하기</a></li>
+                    <li><a href="#">선물하기</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>인스타그램에 놀러오세요!</h2>
+            <p>주소</p>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">인스타그램</a></li>
+                <li><a href="#">카카오플러스</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+
+    </footer>
+</body>
+</html>

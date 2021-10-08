@@ -1,14 +1,17 @@
 @charset "utf-8";
 /* 초기화 */
-body, h1, h2, ul, li, form, fieldset, span { margin: 0; padding: 0; }
+body, h1, h2, ul, li, form, fieldset, span, p { margin: 0; padding: 0; }
 li { list-style: none; }
 a { text-decoration: none; color: #000; transition: all 0.5s ease;}
 .hidden {position: absolute; text-indent: -9999px;}
-body {background: rgb(199, 199, 199);}
+body {
+    /* background: rgb(199, 199, 199); */
+    max-width: 1920px; margin: 0 auto;
+}
 legend {display: none;}
 .upper {text-transform: uppercase;}
 /* 헤더 */
-#header {width: 98%; min-width: 1180px; height: 80px; position: fixed; display: flex; background: #fff; margin: 20px 0 0 1%; border-radius: 15px; z-index: 9999;}
+#header {width: 98%; min-width: 1180px; max-width: 1880px; height: 80px; position: fixed; display: flex; background: #fff; margin: 20px 20px; border-radius: 15px; z-index: 9999;}
 #header h1 {
     width: 154px; height: 31px; float: left; text-indent: -9999px;background: url(../images/bg_common.png) no-repeat 0 0;
     margin: 24.5px 50px 0 50px;
@@ -72,6 +75,13 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
     font-size: 12px; background: #fff; border-radius: 17px; box-shadow: 4px 3px 11px 10px rgb(0 0 0 / 3%); color: #868686;
 }
 #main_popular div > img {max-width: 17px; height: 17px; float: left; padding: 0 5px 0 15px;}
-#main_popular ul {position: absolute; bottom: 10%; width: 100%;}
-#main_popular ul li {width: 31.8%; float: left;}
+#main_popular ul {position: absolute; display: flex; bottom: 15%; width: calc(100% - 240px);}
+#main_popular ul li { flex: 1; float: left; min-width: 280px; border-bottom: 1px solid #000; padding-bottom: 15px; margin-right: 3%; font-size: 16px;}
+#main_popular ul li a { overflow: hidden; display: block;  text-overflow: ellipsis; white-space: nowrap;}
+#main_popular ul li a span {font-size: 20px; color: #ffb718; font-weight: bold;}
 
+/* BEST PRODUCT */
+#main_best_productWrap {width: 100%; background: #fafafa;}
+#main_best_product {max-width: 1390px; margin: 0 auto; padding: 70px 30px 80px; box-sizing: border-box;}
+#main_best_product > h2 {}
+#main_best_product > p {}

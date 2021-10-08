@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* 초기화 */
-body, h1, h2, ul, li, form, fieldset { margin: 0; padding: 0; }
+body, h1, h2, ul, li, form, fieldset, span { margin: 0; padding: 0; }
 li { list-style: none; }
 a { text-decoration: none; color: #000; transition: all 0.5s ease;}
 .hidden {position: absolute; text-indent: -9999px;}
@@ -8,7 +8,7 @@ body {background: rgb(199, 199, 199);}
 legend {display: none;}
 .upper {text-transform: uppercase;}
 /* 헤더 */
-#header {width: 98%; min-width: 1180px; height: 80px; position: fixed; display: flex; background: #fff; margin: 20px 0 0 1%; border-radius: 10px;}
+#header {width: 98%; min-width: 1180px; height: 80px; position: fixed; display: flex; background: #fff; margin: 20px 0 0 1%; border-radius: 15px; z-index: 9999;}
 #header h1 {
     width: 154px; height: 31px; float: left; text-indent: -9999px;background: url(../images/bg_common.png) no-repeat 0 0;
     margin: 24.5px 50px 0 50px;
@@ -37,7 +37,6 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
 #btnSerch {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
 #serch_form {width: 200px; border: 0 none;  height: 48px;}
 #gnb_member ul li {float: left; margin: 0 5px;}
-#gnb_member ul li a:not(.login) {}
 #gnb_member a {display: block;}
 .login {
     width: 137px; height: 49px; border: 1px solid #ffb718;
@@ -45,7 +44,34 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
     line-height: 49px; background: url(../images/more02.png) no-repeat 90% center;
 }
 .login span {padding-left: 20px;}
-.rai {position: relative; width: 50px; height: 50px; background: #ffb718; border-radius: 50%; text-align: center; line-height: 50px;}
+.rai {position: relative; width: 50px; height: 50px; background: #ffb718; border-radius: 50%; text-align: center;}
 .rai img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.rai span {font-size: 12px;}
-.sb_btn {}
+.rai span {font-size: 12px; color: #fff; position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: none;}
+.myp_btn span {transform: translate(20%, -50%)}
+
+/* 슬라이드 */
+#sliderWrap {padding-top: 120px; width: 98%; min-width: 1180px;  margin-left: 1%; }
+#slider_display {position: relative; min-height: 745px; overflow: hidden;  border-radius: 15px; background: #000;}
+#slider_display > a {position: absolute; top: 50%; transform: translateY(-50%); display: block; width: 138px; height: 570px; text-indent: -9999px;}
+#prev_btn {background: url(../images/mainarrow-bg_prev.png) no-repeat center / cover; left: -20px;}
+#prev_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; right: 40%; transform: translateY(-50%) rotate(-180deg);}
+#next_btn {background: url(../images/mainarrow-bg_next.png) no-repeat center / cover; right: -20px;}
+#next_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; left: 40%; transform: translateY(-50%);}
+#slider {}
+#slider_num {position: absolute; right: 13%; top: 50%; transform: translateY(-50%);}
+#slider_num li {margin: 45px 0; font-weight: bold;}
+#slider_num li a {color: #bebebe;}
+
+/* 메인시작 */
+/* 실시간 인기상품 */
+#main_popularWrap {padding: 0 30px;}
+#main_popular {position: relative; max-width: 1570px; min-width: 900px; background: #f7f7f7; margin: 30px auto; padding: 30px 120px; height: 110px; border-radius: 85px;}
+#main_popular h2 {position: absolute; left: 50%; transform: translateX(-50%); font-size: 20px;}
+#main_popular div {
+    position: absolute; display: flex; align-items: center; width: 128px; height: 34px; right: 10%;
+    font-size: 12px; background: #fff; border-radius: 17px; box-shadow: 4px 3px 11px 10px rgb(0 0 0 / 3%); color: #868686;
+}
+#main_popular div > img {max-width: 17px; height: 17px; float: left; padding: 0 5px 0 15px;}
+#main_popular ul {position: absolute; bottom: 10%; width: 100%;}
+#main_popular ul li {width: 31.8%; float: left;}
+

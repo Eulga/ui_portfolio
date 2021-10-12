@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @font-face {
-    font-family: 'S-CoreDream-3Light';
+    font-family: 'S-CoreDream';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -44,7 +44,7 @@ button {border: 0; background: none; color: #000;}
     display: inline-block;; width: 48px; height: 48px; border-radius: 15px; background: #ffb718 url(../images/proc-i03_w.png) no-repeat center;
     background-size: 22px; text-indent: -9999px;
 }
-.item_name {font-size: 17px; color: #363636; height: 54px; font-weight: 600;}
+.item_name {display: block; font-size: 17px; color: #363636; font-weight: 600;}
 .item_explain {font-size: 15px; color: #272727; font-weight: 300;}
 .delivery_text {font-size: 16px; font-weight: bold; color: #2196f3;}
 
@@ -102,7 +102,7 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
 #prev_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; right: 40%; transform: translateY(-50%) rotate(-180deg);}
 #next_btn {background: url(../images/mainarrow-bg_next.png) no-repeat center / cover; right: -20px;}
 #next_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; left: 40%; transform: translateY(-50%);}
-#slider {}
+/* #slider {} */
 #slider_num {position: absolute; right: 13%; top: 50%; transform: translateY(-50%);}
 #slider_num li {margin: 45px 0; font-weight: bold;}
 #slider_num li a {color: #bebebe;}
@@ -130,7 +130,7 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
     height: 1180px; 
 }
 #main_Best_product > h2 { font-size: 38px; font-weight: 900; color: #343434; letter-spacing: 0;}
-#main_Best_product > p {font-size: 20px; font-weight: 400; font-family: 'S-CoreDream-3Light'; }
+#main_Best_product > p {font-size: 20px; font-weight: 400; font-family: 'S-CoreDream'; }
 #Bproduct_menu {position: relative; margin-top: 30px; height: 100px;}
 #tab_title {
     position: absolute; left: 30%; width: 195px; height: 60px; background: #fff; text-align: left;
@@ -192,6 +192,25 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
     text-align: start; position: relative; width: 1300px; height: 395px;
     margin: 0 auto; padding: 0 140px; box-sizing: border-box; overflow: hidden; z-index: 9;
 }
+#Nproduct_box > a {
+    display: block; position: absolute; top: 50%; transform: translateY(-50%); width: 73px; height: 73px; text-indent: -9999px;
+    border-radius: 50%;
+}
+
+#Nproduct_box > a::before {
+    content: ''; position: absolute; top: 0; left: 0; border-radius: 50%; width: 73px; height: 73px;
+    transform: scale(0); /* mouseenter -> scale(1) */ background: #f5f5f5;
+}
+#Nproduct_prev {left: 0; }
+#Nproduct_prev::after {
+    content: ''; position: absolute; top: 0; left: 0; width: 73px; height: 73px;
+    border-radius: 50%; background: url(../images/new-prev.png) no-repeat center;
+}
+#Nproduct_next {right: 0;}
+#Nproduct_next::after {
+    content: ''; position: absolute; top: 0; left: 0; width: 73px; height: 73px;
+    border-radius: 50%; background: url(../images/new-next.png) no-repeat center;
+}
 #Nproduct_item_number {position: absolute; top: -5px; right: 11%; width: 180px; float: left; z-index: 1;}
 #Nproduct_item_number li {float: left; width: 25%; text-align: right;}
 #Nproduct_item_number li a { font-size: 26px; color: #b4b4b4; font-weight: bold;}
@@ -223,3 +242,28 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
 .shopNow .arrow {display: inline-block; width: 16px; height: 8px; overflow: hidden; margin-left: 30px; position: relative;}
 .shopNow .arrow::before {content: ''; position: absolute; left: 0; background: url(../images/arrow_01.png) no-repeat center; width: 16px; height: 8px;}
 .shopNow .arrow::after {content: ''; position: absolute; left: -30px; background: url(../images/arrow_02.png) no-repeat center; width: 16px; height: 8px;}
+
+/* RECOMMENDED PRODUCT */
+#main_Recommended {width: 98%; min-height: 910px; text-align: center; box-sizing: border-box;margin: 0 auto; background: #faf8f2; border-radius: 15px;}
+#recommendedWrap {width: 1400px; height: 100%; margin: 0 auto;  padding: 70px 0 80px 0; box-sizing: border-box;}
+#recommendedWrap h2 {color: #343434; font-size: 38px; font-weight: 900;}
+#recommendedWrap > p {color: #000; font-family: 'S-CoreDream'; font-weight: 400; font-size: 20px;}
+
+#rec_ul {margin-top: 100px; height: 100px;}
+#rec_ul li {
+    position: relative; width: 25%; float: left; color: rgba(0, 0, 0, 0.5); padding-top: 15px;
+    font-family: 'S-CoreDream'; font-weight: 600;
+}
+#rec_ul li::before {content: ''; position: absolute; top: -30px; left: 0; width: 100%; height: 1px; background: #d8d8d8;}
+#rec_ul li::after {content: ''; position: absolute; top: -35px; left: 50%; transform: translateX(-50%); width: 11px; height: 11px; background: #ffb718; border-radius: 50%;}
+#rec_ul li:first-child::before {width: 50%; left: auto; right: 0;}
+#rec_ul li:last-child::before {width: 50%;}
+
+#rec_item_list {margin-top: 50px;}
+#rec_item_list > li {position: relative; width: 25%; float: left;}
+#rec_item_list .rec_item_imgBox {width: 203px; height: 203px; margin: 0 auto; border-radius: 50%; background: #f4eff6;}
+#rec_item_list .rec_item_imgBox > img {width: 188px; height: 188px; margin-bottom: 30px; opacity: 1;}
+#rec_item_list > li .item_name {font-size: 16px; font-weight: normal;}
+#rec_item_list > li .item_explain {opacity: 0; margin: 5px 0;}
+#rec_item_list > li .star_box {margin: 0 auto;}
+.payment_box {opacity: 0;}

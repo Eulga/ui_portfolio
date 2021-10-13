@@ -48,26 +48,29 @@ button {border: 0; background: none; color: #000;}
 .arrow {display: inline-block; width: 16px; height: 8px; overflow: hidden; margin-left: 30px; position: relative;}
 
 /* 헤더 */
-#header {width: 98%; min-width: 1180px; max-width: 1880px; height: 80px; position: fixed; display: flex; background: #fff; margin: 20px 20px; border-radius: 15px; z-index: 9999;}
-#header h1 {float: left; background: url(../images/bg_common.png) no-repeat; margin: 24.5px 50px 0 50px;
+#header {
+    width: 98%; min-width: 1180px; max-width: 1880px; height: 80px; position: fixed; display: flex;
+    background: #fff; margin: 20px 20px; border-radius: 15px; z-index: 9999;
 }
+#header h1 {float: left; width: 154px; background: url(../images/bg_common.png) no-repeat; margin: 24.5px 50px 0 50px;}
 #header h1 a {display: block; width: 154px; height: 31px; text-indent: -9999px;}
 
 /* gnb */
-#gnb {flex: 2; display: flex; align-items: center; justify-content: center} 
+#gnb {flex: 3; display: flex; align-items: center; justify-content: center; min-width: 620px; justify-self: center;} 
 #gnb a {display: block;}
 #gnb li:hover > a {color: #ffb718;}
-#gnb > ul > li {float: left; margin: 0 30px;}
+#gnb > ul {height: 80px;}
+#gnb > ul > li {float: left; margin: 0 30px; height: 100%; padding-top: 28px; box-sizing: border-box;}
 #gnb > ul > li > a {display: block; font-size: 15px; font-weight: 600; font-size: 15px;}
 #gnb > ul > li:first-child > a {margin-right: 30px; position: relative;}
 #gnb > ul > li:first-child > a::before {
     content: ''; position: absolute; top: 5px; right: -45px; width: 1px; height: 13px; background: #b8b2ad;
 }
 div.gnb_depth_area {
-    position: absolute; top: 0; left: 0; width: 100%; margin-top: 80px; background: #fff;
-    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; display: none;
+    position: absolute; top: 0; left: 0; width: 100%; margin-top: 81px; background: #fff; z-index: -1;
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; height: 0;
 }
-div.gnb_depth_area > ul.depth2 {max-width: 1330px; margin: 0 auto; }
+div.gnb_depth_area > ul.depth2 {max-width: 1330px; margin: 0 auto; display: none; }
 div.gnb_depth_area > ul.depth2 > li {float: left; width: 25%; min-height: 250px; border-right: 1px solid #e1e1e1; margin-top: 30px;  padding: 0 20px; box-sizing: border-box;}
 div.gnb_depth_area > ul.depth2 > li:last-child {border: 0;}
 div.gnb_depth_area > ul.depth2 > li > a {background: url(../images/gnb_libg.png) no-repeat right center; color: #343434; font-size: 20px;}
@@ -76,12 +79,13 @@ ul.depth3 {margin-top: 10px;}
 ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
 
 /* gnb_member */
-#gnb_member {flex: 1; display: flex; align-items: center; }
+#gnb_member {flex: 2; display: flex; align-items: center; min-width: 387px; }
 #gnb_member > div {width: 545px;}
-#gnb_member form {border-bottom: 1px solid #000; height: 50px;  position: relative; float: left; margin: 0 20px;}
+#gnb_member form {border-bottom: 1px solid #000; height: 50px;  position: relative; float: left; margin: 0 20px; flex: 1;}
 #gnb_member fieldset {width: 100px; border: 0 none;}
 #btnSerch {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
 #serch_form {width: 200px; border: 0 none;  height: 48px;}
+#gnb_member ul {flex: 2;}
 #gnb_member ul li {float: left; margin: 0 5px;}
 #gnb_member a {display: block;}
 .login {
@@ -335,7 +339,7 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
 #videoWrap1 {background-image: url(../images/ad_bg1.jpg);}
 #videoWrap2 {background-image: url(../images/ad_bg2.jpg);}
 #videoWrap3 {background-image: url(../images/ad_bg3.png);}
-.ad_video {position: absolute; top: 50%; left: 20%; transform: translateY(-50%); border-radius: 15px;}
+.ad_video {position: absolute; width: 766px; height: 433px; top: 50%; left: 20%; transform: translateY(-50%); border-radius: 15px;}
 
 .ad_text_box {position: absolute; top: 16%; left: 63%; width: 450px;}
 .ad_text_box .videoLive {font-size: 15px; font-weight: bold;}
@@ -404,7 +408,7 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
 
 .cscenter {width: 260px; flex: 3;}
 .cscenter b {font-size: 40px; color: #ffb718;}
-.cscenter p {font-size: 14px; color: #4e4e4e;}
+.cscenter p {font-size: 14px; color: #b9b9b9;}
 
 .ft-list {width: 422px; float: right; flex: 4;}
 .ft-list li {display: inline-block; margin-left: 8px;}

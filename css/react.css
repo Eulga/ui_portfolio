@@ -1,0 +1,9 @@
+@media (max-width: 1700px) {
+    .ad_video {width: 680px;}
+}
+
+@media (max-width: 1570px) {
+    #serch_form {width: auto;}
+    .login {width: 49px; background: 0; font-size: 2px;}
+    .login span {padding-left: 11px;}
+}

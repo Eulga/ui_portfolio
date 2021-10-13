@@ -68,7 +68,7 @@ button {border: 0; background: none; color: #000;}
 }
 div.gnb_depth_area {
     position: absolute; top: 0; left: 0; width: 100%; margin-top: 81px; background: #fff; z-index: -1;
-    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; height: 0;
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; height: 0; 
 }
 div.gnb_depth_area > ul.depth2 {max-width: 1330px; margin: 0 auto; display: none; }
 div.gnb_depth_area > ul.depth2 > li {float: left; width: 25%; min-height: 250px; border-right: 1px solid #e1e1e1; margin-top: 30px;  padding: 0 20px; box-sizing: border-box;}
@@ -101,16 +101,65 @@ ul.depth3 > li > a {padding: 2px 0; font-size: 16px; color: #595959;}
 
 /* 슬라이드 */
 #sliderWrap {padding-top: 120px; width: 98%; min-width: 1180px;  margin-left: 1%; }
-#slider_display {position: relative; min-height: 745px; overflow: hidden;  border-radius: 15px; background: #000;}
+#slider_display {position: relative; height: 745px; overflow: hidden;  border-radius: 15px;}
 #slider_display > a {position: absolute; top: 50%; transform: translateY(-50%); display: block; width: 138px; height: 570px; text-indent: -9999px;}
-#prev_btn {background: url(../images/mainarrow-bg_prev.png) no-repeat center / cover; left: -20px;}
-#prev_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; right: 40%; transform: translateY(-50%) rotate(-180deg);}
-#next_btn {background: url(../images/mainarrow-bg_next.png) no-repeat center / cover; right: -20px;}
-#next_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; left: 40%; transform: translateY(-50%);}
-/* #slider {} */
+#slider {width: 400%; height: 100%;}
+#slider li {position: relative; width: 25%; height: 100%; background: no-repeat center / cover; float: left;}
+#slider li:nth-child(1){background-image: url(../images/1630287110-PC슬라이딩배너_1865x745_소지섭.png);}
+#slider li:nth-child(2){background-image: url(../images/1631852364-PC슬라이딩배너_1865x745_3종.png);}
+#slider li:nth-child(3){background-image: url(../images/1630287110-PC슬라이딩배너_1865x745_소지섭.png)}
+#slider li:nth-child(4){background-image: url(../images/1631852364-PC슬라이딩배너_1865x745_3종.png)}
+#slider li div {position: absolute; top: 50%; left: 14%; transform: translateY(-50%);}
+.slider_text {font-size: 60px; color: #000; font-weight: 100; margin: 15px 0; font-family: 'S-CoreDream';}
+.slider_event {font-size: 14px; color: #ffb718; font-weight: 900;}
+.slider_event_text {font-size: 23px; color: #343434; font-weight: 600;}
+.buy_button {
+    display: block; position: relative; width: 189px; background: #fff; height: 69px; line-height: 69px; border-radius: 50px;
+    margin-top: 30px; box-sizing: border-box; color: #000; font-size: 15px; text-align: center;
+    box-shadow: 4px 3px 11px 10px rgb(0 0 0 / 3%);
+}
+.buy_button:hover {
+    color: #fff; background: #ffb718;
+}
+
 #slider_num {position: absolute; right: 13%; top: 50%; transform: translateY(-50%);}
 #slider_num li {margin: 45px 0; font-weight: bold;}
 #slider_num li a {color: #bebebe;}
+#slider_num li a.on {color: #ffb718;}
+
+#prev_btn {background: url(../images/mainarrow-bg_prev.png) no-repeat center / cover; left: -20px;}
+#prev_btn:hover {
+    left: 0px;
+}
+#prev_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; right: 40%; transform: translateY(-50%) rotate(-180deg);}
+#prev_btn::after {
+    content: ''; position: absolute; height: 1px; background: #000;
+    top: calc(50% - 1px); left: 71px;
+}
+#prev_btn:hover::after {
+    width: 100px;
+    animation: bar1 0.3s linear;
+}
+#next_btn {background: url(../images/mainarrow-bg_next.png) no-repeat center / cover; right: -20px;}
+#next_btn:hover {
+    right: 0px;
+}
+#next_btn::before {content: ''; position: absolute; width: 11px; height: 19px; background: url(../images/main-arrow.png) no-repeat center; top: 50%; left: 40%; transform: translateY(-50%);}
+#next_btn::after {
+    content: ''; position: absolute; height: 1px; background: #000;
+    top: calc(50% - 1px); right: 71px;
+}
+#next_btn:hover::after {
+    width: 100px;
+    animation: bar1 0.3s linear;
+}
+
+@keyframes bar1 {
+    0% { width: 0;}
+    100% {
+        width: 100px;
+    }
+}
 
 /* 메인시작 */
 /* 실시간 인기상품 */

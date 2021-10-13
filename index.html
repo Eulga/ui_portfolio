@@ -132,13 +132,45 @@
     <div id="sliderWrap">
         <div id="slider_display">
             <ul id="slider">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li id="slider1">
+                    <div>
+                        <p class="slider_text">나를 채우는</p>
+                        <p class="slider_text">100% 완전 단백질</p>
+                        <p class="slider_event"><span class="upper">event</span></p>
+                        <p class="slider_event_text">더단백 드링크 33% 할인!</p>
+                        <a href="#" class="buy_button">제품 구매하기</span></a>
+                    </div>
+                </li>
+                <li id="slider2">
+                    <div>
+                        <p class="slider_text">나를 채우는</p>
+                        <p class="slider_text">100% 완전 단백질</p>
+                        <p class="slider_event"><span class="upper">event</span></p>
+                        <p class="slider_event_text">더단백 드링크 33% 할인!</p>
+                        <a href="#" class="buy_button">제품 구매하기</span></a>
+                    </div>
+                </li>
+                <li id="slider3">
+                    <div>
+                        <p class="slider_text">나를 채우는</p>
+                        <p class="slider_text">100% 완전 단백질</p>
+                        <p class="slider_event"><span class="upper">event</span></p>
+                        <p class="slider_event_text">더단백 드링크 33% 할인!</p>
+                        <a href="#" class="buy_button">제품 구매하기</span></a>
+                    </div>
+                </li>
+                <li id="slider4">
+                    <div>
+                        <p class="slider_text">나를 채우는</p>
+                        <p class="slider_text">100% 완전 단백질</p>
+                        <p class="slider_event"><span class="upper">event</span></p>
+                        <p class="slider_event_text">더단백 드링크 33% 할인!</p>
+                        <a href="#" class="buy_button">제품 구매하기</span></a>
+                    </div>
+                </li>
             </ul>
             <ul id="slider_num">
-                <li><a href="#">01</a></li>
+                <li><a href="#" class="on">01</a></li>
                 <li><a href="#">02</a></li>
                 <li><a href="#">03</a></li>
                 <li><a href="#">04</a></li>
@@ -838,13 +870,6 @@
     </footer>
 </body>
 <script>
-    $('#gnb > ul > li').on('mouseenter', function() {
-        $(this).children('div').stop().animate({height: 350}).children('.depth2').stop().slideDown()
-        $('#header').css({borderBottom: '1px solid #000', borderRadius: '15px 15px 0 0'})
-    })
-    $('#gnb > ul > li').on('mouseleave', function() {
-        $(this).children('div').stop().animate({height: 0}, 300).children('.depth2').stop().css({display: 'none'});
-        $('#header').css({borderBottom: 0, borderRadius: '15px'})
-    })
+    
 </script>
 </html>
